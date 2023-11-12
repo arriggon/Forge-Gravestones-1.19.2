@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gravestones:block/gravestone_1_moss"
+    },
+    "facing=east": {
+      "model": "gravestones:block/gravestone_1_moss",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "gravestones:block/gravestone_1_moss",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gravestones:block/gravestone_1_moss",
+      "y": 270
+    }
+  }
+}

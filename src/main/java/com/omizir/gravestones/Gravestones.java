@@ -1,6 +1,8 @@
 package com.omizir.gravestones;
 
 import com.mojang.logging.LogUtils;
+import com.omizir.gravestones.block.ModBlocks;
+import com.omizir.gravestones.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +25,9 @@ public class Gravestones
     public Gravestones()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
